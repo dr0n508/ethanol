@@ -1,0 +1,678 @@
+*
+  font-family: 'Lato', sans-serif
+  font-size: 14px
+
+$black: #333333
+$orange: #ffcc33
+
+@mixin border
+  border-bottom: solid 3px $orange
+  box-shadow: 0px 1px 0px 0px #ffd860
+
+h2
+  font-size: 30px
+  text-transform: uppercase
+  text-align: center
+  font-weight: 300
+  span
+    font-weight: 600
+    font-size: 30px
+    color: $orange
+
+.section-descr
+  color: #999999
+  font-size: 22px
+  font-style: italic
+  position: relative
+  text-align: center
+  margin-bottom: 150px
+  &:before
+    content: ""
+    width: 100%
+    height: 1px
+    background: #dddddd
+    box-shadow: 0px 1px 0px 0px #eeeeee
+    position: absolute
+    bottom: -50px
+    margin-right: -50%
+    right: 50%
+  &:after
+    content: ""
+    width: 58px
+    height: 56px
+    display: block
+    background: url("../img/ico-section.png") no-repeat 50% 50%
+    position: absolute
+    right: 50%
+    margin-right: -29px
+    bottom: -80px
+
+/********header******/
+header
+  padding: 30px 0
+
+.logo
+  float: left
+
+nav
+  ul li
+    a
+      text-transform: uppercase
+      font-weight: 800
+      color: $black
+      border-bottom: solid 3px transparent
+      &:hover
+        text-decoration: none
+        @include border
+
+.navbar-default .navbar-nav>li>a
+  color: $black
+
+
+.navbar-default
+  background: none
+  border: none
+  box-shadow: none
+  margin: 0
+
+.navbar-brand
+  height: auto
+  padding: 0
+.nav
+  line-height: 74px
+
+
+
+/*****welcome screen*****/
+.welcome
+  text-align: center
+  background: url("../img/bg-welcome.jpg") no-repeat
+  background-size: cover
+  padding: 200px 0
+  color: #ffffff
+  h1
+    text-transform: uppercase
+    color: $orange
+    font-size: 40px
+    font-weight: 800
+  .main-description
+    font-size: 22px
+    margin-bottom: 100px
+  .view-our-work
+    color: #ffffff
+    text-transform: uppercase
+    padding-bottom: 20px
+    font-size: 22px
+    @include border
+    &:hover
+      text-decoration: none
+
+/***********about-ethanol********/
+.about-ethanol
+  background: $orange
+  color: #ffffff
+  text-align: center
+  padding: 100px 0
+
+.ethanol-descr
+  margin-top: 50px
+  font-size: 22px
+  span
+    font-weight: 800
+    font-size: 22px
+
+
+
+/****what-we-do*****/
+.what-we-do
+  padding: 120px 0
+  ul
+    padding: 0
+  li
+    list-style: none
+    margin-bottom: 40px
+    color: #999999
+    i
+      width: 110px
+      height: 110px
+      background: $orange
+      border-radius: 10px 55px 55px 55px
+      display: block
+      line-height: 110px
+      text-align: center
+      color: #ffffff
+    h3
+      font-size: 20px
+      font-weight: 600
+    p
+      font-size: 16px
+    &:nth-child(odd)
+      text-align: right
+
+
+/*****us-better*/
+.us-better
+  padding: 120px 0
+  .pro-profile
+    background: #f3f3f3
+    .slogan-profile
+      margin-top: 50px
+      color: $black
+      font-size: 29px
+      text-align: center
+      span
+        font-size: 37px
+        font-weight: 600
+    .pro-profile-1
+      overflow: hidden
+      .social-profile
+        list-style: none
+        position: relative
+        margin-top: -65px
+        li
+          width: 65px
+          height: 65px
+          background: $orange
+          float: left
+          margin-right: 5px
+          text-align: center
+          a
+            color: #ffffff
+            padding-top: 15px
+            text-decoration: none
+    .pro-profile-2
+      padding: 0 70px
+      h3
+        font-size: 24px
+        font-weight: 600
+        margin: 50px 0
+      .descr-profile
+        color: #999999
+        margin-bottom: 50px
+      p
+        color: #999999
+
+.progress-bar
+  background: $orange
+.progress
+  background: #999999
+  height: 13px
+  border-radius: 0
+.wrap-statistic
+  border-top: solid 1px #d2d2d2
+  border-bottom: solid 1px #d2d2d2
+  background: #f3f3f3
+.statistic
+  list-style: none
+  text-align: center
+  li
+    padding: 50px 0 30px
+    border: solid 1px #d2d2d2
+  i
+    color: $orange
+    margin: 20px 0
+
+  p
+    font-size: 26px
+    font-weight: 600
+    &:last-child
+      font-size: 16px
+      font-weight: 400
+      font-style: italic
+      color: #999999
+
+.team
+  padding: 120px 0
+  .item
+    position: relative
+    &:hover .descr-team
+      display: block
+  .name-team
+    margin-top: 50px
+    font-size: 30px
+    color: $black
+  .position-team
+    text-transform: uppercase
+    color: #cccccc
+  .descr-team
+    display: none
+    background: rgba(0,0,0,.8)
+    padding: 50px 30px
+    margin: 0 30px
+    color: #ffffff
+    position: absolute
+    top: 50%
+  ul
+    padding: 0
+    margin-top: 30px
+    li
+      list-style: none
+      display: inline-block
+      margin: 0 2px
+      a
+        padding-top: 7px
+        width: 40px
+        height: 40px
+        background: $orange
+        color: #ffffff
+        text-align: center
+        &:hover
+          text-decoration: none
+
+
+
+
+#owl-demo .item
+  margin: 3px
+  text-align: center
+
+
+/*#owl-demo .item img
+  display: block
+  width: 100%
+  height: auto
+
+
+.our-functional
+  overflow: hidden
+  padding: 120px 0
+  .wrap-our-functional
+    padding: 50px 0
+    background: #f3f3f3
+
+
+.nav-tabs
+  border: none
+  .active
+    i
+      color: #ffffff
+    h3
+      font-size: 14px
+      text-transform: uppercase
+      font-weight: 600
+      color: #ffffff
+    h4
+      font-size: 14px
+      font-style: italic
+      color: #ffffff
+
+.nav-tabs>li
+  float: none
+  background-color: #ffffff
+  margin-bottom: 10px
+  border-radius: 5px
+  border-bottom: solid 3px #ccc
+  a
+    margin-right: 0
+  i
+    color: $black
+    width: 25%
+    float: left
+    line-height: 60px
+    margin-left: 10px
+
+  h3
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: 600
+    color: $black
+    margin: 10px 0
+    
+  h4
+    font-size: 14px
+    font-style: italic
+    color: $black
+    
+.tab-pane
+  h3
+    font-size: 24px
+    color: $black
+    text-transform: uppercase
+    margin: 0 0 40px 0
+    font-weight: 600
+  p
+    margin-bottom: 50px
+    font-size: 16px
+    color: #999999
+
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+  background-color: $orange
+  border-radius: 5px
+  border-bottom: solid 3px #996600
+
+/****isotop***/
+
+.button
+  display: inline-block
+  padding: 0.5em 1.0em
+  border-radius: 1px
+  background: white
+  color: #222
+  cursor: pointer
+  border: solid 1px #cccccc
+  outline: none
+
+.button-group
+  text-align: center
+  margin-bottom: 50px
+
+.button:hover
+  background-color: #f1f1f1
+
+.button:active,
+.button.is-checked
+  background-color: #f1f1f1
+
+.isotope
+  .element-item
+    &:nth-child(2)
+      background: url("../img/item-filter2.png") 50% 50% no-repeat
+    &:nth-child(3)
+      background: url("../img/item-filter1.png") 50% 50% no-repeat
+    &:nth-child(4)
+      background: url("../img/item-filter2.png") 50% 50% no-repeat
+    &:nth-child(5)
+      background: url("../img/item-filter1.png") 50% 50% no-repeat
+    &:nth-child(6)
+      background: url("../img/item-filter2.png") 50% 50% no-repeat
+    &:nth-child(7)
+      background: url("../img/item-filter3.png") 50% 50% no-repeat
+    &:nth-child(8)
+      background: url("../img/item-filter1.png") 50% 50% no-repeat
+    &:nth-child(9)
+      background: url("../img/item-filter2.png") 50% 50% no-repeat
+    &:nth-child(10)
+      background: url("../img/item-filter3.png") 50% 50% no-repeat
+    &:nth-child(11)
+      background: url("../img/item-filter1.png") 50% 50% no-repeat
+    &:nth-child(12)
+      background: url("../img/item-filter2.png") 50% 50% no-repeat
+
+
+.element-item
+  padding: 0
+  overflow: hidden
+  position: relative
+  background: url("../img/item-filter3.png") 50% 50% no-repeat
+  background-size: cover
+  height: 230px
+  width: 16.66%
+  &:hover .overlay
+    display: block
+  img
+    width: 100%
+    height: auto
+  .overlay
+    display: none
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    color: #ffffff
+    background: rgba(245,204,81,.8)
+    text-align: center
+    border: solid 10px rgba(245,204,81,.90)
+    a
+      margin-top: 50px
+      border: solid 1px #ffffff
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      text-align: center
+      line-height: 40px
+      color: #ffffff
+      &:hover
+        text-decoration: none
+        background: rgba(0,0,0,.2)
+    h3
+      font-size: 12px
+      color: $black
+      text-transform: uppercase
+      font-weight: 600
+    p
+      color: $black
+      font-size: 12px
+      font-style: italic
+
+/*workflow*/
+.workflow
+  padding: 120px 0
+  .wrap-workflow
+    background: #f3f3f3
+    .wrap-list
+      margin: 0 200px 0 150px
+      padding: 100px 0
+      border-left: solid 5px #ffffff
+      li
+        list-style: none
+        i
+          width: 110px
+          height: 110px
+          background: $orange
+          border-radius: 10px 55px 55px 55px
+          border: solid 5px #ffffff
+          color: #ffffff
+          text-align: center
+          line-height: 110px
+          margin-bottom: 20px
+          position: relative
+          margin-left: -55px
+          float: left
+        .wrap-text
+          margin-left: 100px
+        h3
+          font-size: 20px
+          font-weight: 600
+          text-transform: uppercase
+          margin: 0 0 20px 0
+
+
+
+
+
+/**************price*/
+.price
+  padding: 120px 0
+  ul
+    list-style: none
+    li
+      text-align: center
+      padding: 0
+      overflow: hidden
+      border: solid 1px $black
+      border-radius: 10px
+      -webkit-transition: .2s
+      -moz-transition: .2s
+      -ms-transition: .2s
+      -o-transition: .2s
+      transition: .2s
+      .name-plan
+        font-size: 22px
+        font-weight: 600
+        text-transform: uppercase
+        background: $black
+        color: #ffffff
+        padding: 30px 0
+      .price-plan
+        font-size: 65px
+        font-weight: 600
+        border-bottom: solid 1px $black
+        .dollars
+          font-size: 36px
+          margin-top: -30px
+          position: relative
+        span
+          font-size: 26px
+      .desc-plan
+        color: #838383
+        margin-bottom: 20px
+      a
+        display: inline-block
+        text-transform: uppercase
+        font-size: 11px
+        font-weight: 600
+        color: #ffffff
+        background: $black
+        padding: 20px 80px
+        border-radius: 5px
+      .trial-plan
+        margin-top: 10px
+        text-transform: uppercase
+        font-size: 11px
+        color: #838383
+      &:hover
+        border-color: $orange
+        position: relative
+        margin-top: -20px
+        -webkit-box-shadow: -1px 0px 28px 0px rgba(0, 0, 0, 0.54)
+        -moz-box-shadow:    -1px 0px 28px 0px rgba(0, 0, 0, 0.54)
+        box-shadow:         -1px 0px 28px 0px rgba(0, 0, 0, 0.54)
+      &:hover .name-plan
+        background: $orange
+      &:hover .price-plan
+        border-color: $orange
+        padding-bottom: 20px
+        -webkit-transition: .2s
+        -moz-transition: .2s
+        -ms-transition: .2s
+        -o-transition: .2s
+        transition: .2s
+      &:hover a
+        background: $orange
+        margin-top: 20px
+        -webkit-transition: .2s
+        -moz-transition: .2s
+        -ms-transition: .2s
+        -o-transition: .2s
+        transition: .2s
+
+.blog
+  padding: 130px 0
+
+.wrapper-blog
+  background: #f3f3f3
+  padding: 100px 0
+  text-align: center
+  ul
+    list-style: none
+    text-align: left
+
+.article
+  margin-bottom: 20px
+
+.blog-post
+  border: solid 1px #dedede
+  border-radius: 5px
+  padding-top: 15px
+  background: #ffffff
+  .image-article
+    overflow: hidden
+    img
+      border: solid 1px #dedede
+  .text-article
+    time
+      font-size: 11px
+      color: #999999
+    h3
+      font-size: 16px
+      font-weight: 600
+      color: $black
+      margin: 5px 0
+    .excerpt-article
+      color: #999999
+  .meta-article
+    border-top: solid 1px #dedede
+    .author a, .number-comments a, .btn-readmore a
+      color: $orange
+      padding: 0 10px
+
+    .author, .number-comments
+      &:after
+        content: "/"
+        color: $orange
+    p
+      display: inline-block
+      margin: 10px 0
+    .likes
+      color: #ff0707
+      padding: 6px 10px
+      border-radius: 5px
+      background: #f4f4f4
+      float: right
+      margin: 5px 0
+      span
+        color: #666666
+        margin-left: 20px
+
+.btn-load-more
+  color: #ffffff
+  background: $orange
+  padding: 10px 30px
+  border-radius: 5px
+  font-size: 16px
+
+
+/**********map*********/
+.map
+  padding: 100px 0
+  .contacts
+    margin-top: 80px
+    text-align: center
+    list-style: none
+    i
+      width: 110px
+      height: 110px
+      border-radius: 10px 55px 55px 55px
+      background: $orange
+      color: #ffffff
+      line-height: 110px
+    p
+      margin: 50px 0
+      font-size: 18px
+      font-weight: 600
+      color: $black
+  form
+    input, textarea
+      width: 100%
+      padding: 15px
+      outline: none
+      border-radius: 5px
+      border: solid 1px #dedede
+      margin-bottom: 15px
+
+    ::-webkit-input-placeholder
+      font-weight: 600
+
+    ::-moz-placeholder
+      font-weight: 600
+
+
+footer
+  background: $orange
+  color: #ffffff
+  padding: 50px 0
+  .copyright
+    line-height: 28px
+    float: left
+    margin: 0
+    font-size: 16px
+    font-weight: 600
+  ul
+    float: right
+    list-style: none
+    margin: 0
+    li
+      display: inline-block
+      margin-left: 20px
+      a
+        color: #ffffff
+
+
+
+
+
+
+

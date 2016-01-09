@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1200px) {
+  .workflow .wrap-workflow .wrap-list {
+    margin: 0 100px 0 150px; } }
+@media only screen and (max-width: 992px) {
+  .workflow .wrap-workflow .wrap-list {
+    margin: 0 50px 0 100px; }
+
+  .element-item {
+    width: 33.33%; }
+
+  .what-we-do li, .what-we-do i {
+    text-align: center;
+    margin: 0 auto; }
+    .what-we-do li:nth-child(odd), .what-we-do i:nth-child(odd) {
+      text-align: center; } }
+@media only screen and (max-width: 768px) {
+  .workflow .wrap-workflow .wrap-list {
+    margin: 0 10px 0 60px; }
+
+  .element-item {
+    width: 50%; } }
+
+/*# sourceMappingURL=media.css.map */
